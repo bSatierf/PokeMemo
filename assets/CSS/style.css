@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bkg {
+  background-color: #EEEEEE;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cabecalho {
+  height: 23%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cabecalho-titulo {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-game {
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  font-size: 2.5rem;
+}
+
+.fundo {
+  background-color: #EEEEEE;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabuleiro {
+  margin: center;
+  width: 40rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 25px;
+}
+
+.card {
+  width: 8rem;
+  height: 8rem;
+  margin: .5rem;
+  border-radius: 10%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frente {
+  background-image: url('../img/Logo-Pokebola-Pokémon-PNG.png');
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.verso {
+  transform: rotateY(180deg);
+  background-color: rgba(201, 201, 201, 0.63);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid black;
+}
+
+.nome {
+  color: #000;
+  height: 1rem;
+  width: 10rem;
+  background-color: transparent;
+  text-transform: capitalize;
+  text-align: center;
+  border-top: 1px dotted black;
+  padding-bottom: 1.2rem;
+}
+
+.carta-desativada {
+  opacity: .5;
+  filter: saturate(0);
+}
